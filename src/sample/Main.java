@@ -82,22 +82,7 @@ public class Main extends Application {
                 }
             }
         }while (!opcion.equals("0"));
-        /*while (!opcion.equals("0"));
-
-
-        pilas.Push(2);
-        pilas.Push(8);
-        pilas.Push(1);
-
-        pilas.peek();
-        pilas.Cima();
-        pilas.Pop();
-        pilas.peek();
-        pilas.Pop();
-        pilas.Cima();
-        pilas.Pop();
-        pilas.peek();
-        */
+        i
     }
 
 
