@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Scanner;
+
 /**
  * Created by lenovo on 08/11/2017.
  */
@@ -56,7 +58,7 @@ public class Pilas {
 
     public void Minimo() {
         Nodo temp = top;//Crea una copia de la pila por una auxiliar temporal
-        int Min = temp.getValor();
+        int Min = top.getValor();
         if (temp != null) {
             while (temp != null) {
                 if (Min > temp.getValor()) {
@@ -68,6 +70,14 @@ public class Pilas {
         } else {
             System.out.println("La pila esta vacía");
         }
+    }
+
+    public void Insertar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("¿Ingrese un valor?");
+        int dato = sc.nextInt();
+        Push(dato);
+        
     }
 
 
