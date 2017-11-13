@@ -4,32 +4,34 @@ package sample;
  * Created by lenovo on 08/11/2017.
  */
 public class Nodo {
-    private int valor;
-    private Nodo prox;
+    private int valor; // se guardar el valor
+    private Nodo prox; //para enlazar nodos
 
-    public Nodo(){
+    public Nodo() { //Constructor que inicializamos el valor de variables
         this.valor = 0;
         this.prox = null;
     }
 
-    public Nodo(int v){
+    public Nodo(int v) {
         this.valor = v;
         this.prox = null;
     }
 
-    public  void  setValor(int v){
+    public void setValor(int v) {
         valor = v;
     }
 
-    public void setProx(Nodo p){
+    public void setProx(Nodo p) {
         prox = p;
     }
 
-    public int getValor(){
+    public int getValor() {
         return valor;
     }
 
-    public  Nodo getProx(){
+    public Nodo getProx() {
         return prox;
     }
+
+
 }
