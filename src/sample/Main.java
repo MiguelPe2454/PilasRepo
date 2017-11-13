@@ -29,11 +29,9 @@ public class Main extends Application {
         pilas.peek();
         pilas.Cima();
         pilas.Pop();
-        pilas.peek();
-        pilas.Pop();
-        pilas.Cima();
-        pilas.Pop();
-        pilas.peek();
+        pilas.Minimo();
+        pilas.Maxi();
+
     }
 
 
