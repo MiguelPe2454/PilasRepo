@@ -94,7 +94,6 @@ public class Pilas {
         }
     }
 
-<<<<<<< HEAD
     public void Insertar(){
         Scanner sc = new Scanner(System.in);
         System.out.println("¿Ingrese un valor?");
@@ -103,7 +102,7 @@ public class Pilas {
         
     }
 
-=======
+
     public void Maxi(){
         Nodo temp = top;
         int max = temp.getValor();
@@ -119,6 +118,6 @@ public class Pilas {
             System.out.println("Pila esta vacia");
         }
     }
->>>>>>> maxi
+
 
 }
