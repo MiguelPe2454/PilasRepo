@@ -65,12 +65,25 @@ public class Pilas {
             System.out.println("La pila esta vacia");
     }
 
+    public boolean Buscar (){
+        Nodo temp = top;
+        int  num = temp.getValor();
+        boolean encontrado = false;
+        while (temp != null && encontrado != true){
+            if ( num == temp.getValor()){
+                encontrado = true;
+            }
+            temp = temp.getProx();
+        }
+        return encontrado;
+    }
+
     public void Minimo() {
         Nodo temp = top;//Crea una copia de la pila por una auxiliar temporal
         int Min = top.getValor();
         if (temp != null) {
             while (temp != null) {
-                if (Min > temp.getValor()) {
+                if (Min >  temp.getValor()) {
                     Min = temp.getValor();
                 }
                 temp = temp.getProx();//Avanza de posición en la pila
@@ -81,6 +94,7 @@ public class Pilas {
         }
     }
 
+<<<<<<< HEAD
     public void Insertar(){
         Scanner sc = new Scanner(System.in);
         System.out.println("¿Ingrese un valor?");
@@ -89,5 +103,22 @@ public class Pilas {
         
     }
 
+=======
+    public void Maxi(){
+        Nodo temp = top;
+        int max = temp.getValor();
+        if (temp != null) {
+            while (temp != null) {
+                if ( max < temp.getValor()) {
+                    max = temp.getValor();
+                }
+                temp = temp.getProx();
+            }
+            System.out.println("El valor maximo es: " + max);
+        }else{
+            System.out.println("Pila esta vacia");
+        }
+    }
+>>>>>>> maxi
 
 }

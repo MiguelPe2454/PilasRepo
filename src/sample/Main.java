@@ -24,6 +24,7 @@ public class Main extends Application {
 
         //launch(args);
 
+<<<<<<< HEAD
         String opcion;
         do {
 
@@ -81,6 +82,19 @@ public class Main extends Application {
                 }
             }
         }while (!opcion.equals("0"));
+=======
+        Pilas pilas = new Pilas();
+        pilas.Push(2);
+        pilas.Push(8);
+        pilas.Push(1);
+
+        pilas.peek();
+        pilas.Cima();
+        pilas.Pop();
+        pilas.Minimo();
+        pilas.Maxi();
+
+>>>>>>> maxi
     }
 
 
