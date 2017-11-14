@@ -24,7 +24,6 @@ public class Main extends Application {
 
         //launch(args);
 
-
         String opcion;
         do {
 
@@ -82,7 +81,6 @@ public class Main extends Application {
                 }
             }
         }while (!opcion.equals("0"));
-        i
     }
 
 
